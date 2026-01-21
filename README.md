@@ -41,6 +41,8 @@ This makes the app function like a real generation tool with history.
 
 ## 📸 Screenshots / Demo
 
+![Demo](/docs/demo.gif)
+
 ---
 
 ## ⚡ Installation
