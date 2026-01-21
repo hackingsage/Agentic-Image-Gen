@@ -1,0 +1,10 @@
+streamlit
+diffusers
+transformers
+accelerate
+safetensors
+torch
+Pillow
+numpy
+opencv-python
+scipy
