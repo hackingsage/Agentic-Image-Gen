@@ -1,7 +1,7 @@
 import torch
 import streamlit as st
 from PIL import Image
-from diffusers import AutoPipelineForInpainting
+from diffusers import StableDiffusionXLInpaintPipeline
 
 MODEL_ID = "stabilityai/stable-diffusion-xl-base-1.0"
 
@@ -18,7 +18,7 @@ def _seed_gen(seed: int):
 
 @st.cache_resource
 def get_inpaint_pipe():
-    pipe = AutoPipelineForInpainting.from_pretrained(
+    pipe = StableDiffusionXLInpaintPipeline.from_pretrained(
         MODEL_ID,
         torch_dtype=_dtype(),
         variant="fp16" if torch.cuda.is_available() else None,
